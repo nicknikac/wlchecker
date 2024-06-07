@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrayList Checker</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body onclick="playAudio()">
+    <video autoplay loop muted class="backgroundVideo">
+        <source src="dream.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container">
+        <div class="content">
+            <img src="logo.webp" class="logo">
+            <h1>Are You On The StrayList?</h1>
+            <input type="text" id="walletAddress" placeholder="Enter your wallet address here">
+            <button onclick="checkEligibility()">Check</button>
+            <p id="result"></p>
+        </div>
+    </div>
+    <audio id="backgroundMusic" loop style="display:none;">
+        <source src="sound.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="mute-button" onclick="toggleMute()">
+        <img src="Speaker.webp" alt="Mute/Unmute">
+    </button>
+    <script src="scripts.js"></script>
+</body>
+</html>
